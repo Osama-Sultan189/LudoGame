@@ -1,0 +1,151 @@
+/*BSEF19M013 - OSAMA SULTAN*/
+header{
+	color: white;
+	text-align: center;
+	margin-top: 30px;
+}
+#restart{
+	font-size: 30px;
+	background-color: navajowhite;
+	border-radius: 10px;
+	padding: 10px;
+	border: 3px solid white;
+}
+body{
+	margin: 0px;
+	background: black;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-image: url(images/background.jpg);
+	background-position: center;
+
+}
+.mainContainer{
+	padding: 100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0px;
+}
+.board{
+	background-color: white;
+	width: 400px;
+	height: 400px;
+	margin:auto;
+	display: grid;
+	grid-template-columns: 40% 20% 40%;
+	grid-template-rows: 40% 20% 40%;
+	border-style: ridge;
+  	border-width: 25px;
+  	border-color: coral;
+}
+.dice{
+	text-align: center;
+	margin: auto;
+}
+#diceSize{
+	background-image: linear-gradient(to right, red , yellow);
+	margin: auto;
+	margin-top: 15px;
+	background-color: white;
+	height: 70px;
+	width: 70px;
+	border-radius: 10px;
+}
+.Home{
+	display: grid;
+	grid-template-rows: 50% 50%;
+	grid-template-columns: 50% 50%;
+	background-color: white;
+	width: 70%;
+	height: 70%;
+	margin: auto;
+	margin-top: 15%;
+	border-radius: 10px;
+}
+.child,.childy,.childb,.childr,.childg{
+	border: 1px solid black;
+	overflow:hidden;
+}
+.childy{
+	background-color: yellow;
+}
+.childb{
+	background-color: blue;
+}
+.childr{
+	background-color: red;
+}
+.childg{
+	background-color: green;
+}
+.green{
+	border:1px solid black;
+	background-color: green;
+}
+.yellow{
+	border:1px solid black;
+	background-color: yellow;
+}
+.red{
+	border:1px solid black;
+	background-color: red;
+}
+.blue{
+	border:1px solid black;
+	background-color: blue;
+}
+.playArea1{
+	display: grid;
+	grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.playArea2{
+	display: grid;
+	grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+	grid-template-rows: 33.33% 33.33% 33.33%;
+}
+.playArea3{
+	display: grid;
+	grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+	grid-template-rows: 33.33% 33.33% 33.33%;
+}
+.playArea4{
+	display: grid;
+	grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.mid {
+    width: 0px;
+    height: 0px;
+    border-left: 40px solid green;
+    border-right: 40px solid blue;
+    border-bottom: 40px solid red;
+    border-top: 40px solid yellow;
+}
+#playerName{
+	color: white;
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#numbers{
+	font-size: 25px;
+	color: white;
+	text-align: center;
+}
+
+.greenPiece,.redPiece,.bluePiece,.yellowPiece,.greenPieceO,.redPieceO,.bluePieceO,.yellowPieceO{
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	padding: 0%;
+	border: none;
+	text-align: center;
+	box-shadow: 3px 3px 3px grey;
+}
+#no{
+	color: white;
+	background-color: transparent;
+	font-size: 20px;
+	border: none;
+}

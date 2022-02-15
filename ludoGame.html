@@ -1,0 +1,174 @@
+<!--BSEF19M013 OSAMA SULTAN-->
+<!--ASSIGNMENT 4 - LUDO-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ludo Game | Assignment</title>
+	<link rel="stylesheet" type="text/css" href="ludoGame.css">
+	<!-- Font Awesome Icon Library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="ludo.js" defer></script>
+</head>
+<body>
+	<header>
+		<button id="restart" onclick="restart()">RESTART GAME</button>
+	</header>
+	<div class="mainContainer">
+		<!--Board Srats-->
+		<div class="board">
+			<div class="green">
+				<div class="Home">
+					<div id="green1">
+						<button onClick="playerClick(this.id)" class="greenPiece" id="g1" disabled><img height="100%" width="100%" src="images/gamePiece/green.png" alt=""></button>
+					</div> 
+					<div id="green2">
+						<button onClick="playerClick(this.id)" class="greenPiece" id="g2" disabled><img height="100%" width="100%" src="images/gamePiece/green.png" alt=""></button>
+					</div>
+					<div id="green3">
+						<button onClick="playerClick(this.id)" class="greenPiece" id="g3" disabled><img height="100%" width="100%" src="images/gamePiece/green.png" alt=""></button>
+					</div>
+					<div id="green4">
+						<button onClick="playerClick(this.id)" class="greenPiece" id="g4" disabled><img height="100%" width="100%" src="images/gamePiece/green.png" alt=""></button>
+					</div>
+				</div>
+			</div>
+			<div class="playArea1">
+				<div class="child" id="24"></div>
+				<div class="child" id="25"></div>
+				<div class="child" id="26"></div>
+				<div class="child" id="23"></div>
+				<div class="childy" id="yh1"></div>
+				<div class="childy cheera" id="27"></div>
+				<div class="childy cheera" id="22"></div>
+				<div class="childy" id="yh2"></div>
+				<div class="child" id="28"></div>
+				<div class="child" id="21"></div>
+				<div class="childy" id="yh3"></div>
+				<div class="child" id="29"></div>
+				<div class="child" id="20"></div>
+				<div class="childy" id="yh4"></div>
+				<div class="child" id="30"></div>
+				<div class="child" id="19"></div>
+				<div class="childy" id="yh5"></div>
+				<div class="child" id="31"></div>
+			</div>
+			<div class="yellow">
+				<div class="Home">
+					<div id="yellow1">
+						<button onClick="playerClick(this.id)" disabled class="yellowPiece" id="y1"><img height="100%" width="100%" src="images/gamePiece/yellow.png" alt=""></button>
+					</div> 
+					<div id="yellow2">
+						<button onClick="playerClick(this.id)" disabled class="yellowPiece" id="y2"><img height="100%" width="100%" src="images/gamePiece/yellow.png" alt=""></button>
+					</div>
+					<div id="yellow3">
+						<button onClick="playerClick(this.id)" disabled class="yellowPiece" id="y3"><img height="100%" width="100%" src="images/gamePiece/yellow.png" alt=""></button>
+					</div>
+					<div id="yellow4">
+						<button onClick="playerClick(this.id)" disabled class="yellowPiece" id="y4"><img height="100%" width="100%" src="images/gamePiece/yellow.png" alt=""></button>
+					</div>
+				</div>
+			</div>
+			<div class="playArea2">
+				<div class="child" id="13"></div>
+				<div class="childg cheera" id="14"></div>
+				<div class="child" id="15"></div>
+				<div class="child" id="16"></div>
+				<div class="child" id="17"></div>
+				<div class="child" id="18"></div>
+				<div class="child" id="12"></div>
+				<div class="childg" id="gh1"></div>
+				<div class="childg" id="gh2"></div>
+				<div class="childg" id="gh3"></div>
+				<div class="childg" id="gh4"></div>
+				<div class="childg" id="gh5"></div>
+				<div class="child" id="11"></div>
+				<div class="child" id="10"></div>
+				<div class="childg cheera" id="9"></div>
+				<div class="child" id="8"></div>
+				<div class="child" id="7"></div>
+				<div class="child" id="6"></div>
+			</div>
+			<div class="mid"></div>
+			<div class="playArea3">
+				<div class="child" id="32"></div>
+				<div class="child" id="33"></div>
+				<div class="child" id="34"></div>
+				<div class="childb cheera" id="35"></div>
+				<div class="child" id="36"></div>
+				<div class="child" id="37"></div>
+				<div class="childb" id="bh5"></div>
+				<div class="childb" id="bh4"></div>
+				<div class="childb" id="bh3"></div>
+				<div class="childb" id="bh2"></div>
+				<div class="childb" id="bh1"></div>
+				<div class="child" id="38"></div>
+				<div class="child" id="44"></div>
+				<div class="child" id="43"></div>
+				<div class="child" id="42"></div>
+				<div class="child" id="41"></div>
+				<div class="childb cheera" id="40"></div>
+				<div class="child" id="39"></div>
+			</div>
+			<div class="red">
+				<div class="Home">
+					<div id="red1">
+						<button onClick="playerClick(this.id)" disabled class="redPiece" id="r1"><img height="100%" width="100%" src="images/gamePiece/red.png" alt=""></button>
+					</div> 
+					<div id="red2">
+						<button onClick="playerClick(this.id)" disabled class="redPiece" id="r2"><img height="100%" width="100%" src="images/gamePiece/red.png" alt=""></button>
+					</div>
+					<div id="red3">
+						<button onClick="playerClick(this.id)" disabled class="redPiece" id="r3"><img height="100%" width="100%" src="images/gamePiece/red.png" alt=""></button>
+					</div>
+					<div id="red4">
+						<button onClick="playerClick(this.id)" disabled class="redPiece" id="r4"><img height="100%" width="100%" src="images/gamePiece/red.png" alt=""></button>
+					</div>
+				</div>
+			</div>
+			<div class="playArea4">
+				<div class="child" id="5"></div>
+				<div class="childr" id="rh5"></div>
+				<div class="child" id="45"></div>
+				<div class="child" id="4"></div>
+				<div class="childr" id="rh4"></div>
+				<div class="child" id="46"></div>
+				<div class="child" id="3"></div>
+				<div class="childr" id="rh3"></div>
+				<div class="child" id="47"></div>
+				<div class="child" id="2"></div>
+				<div class="childr" id="rh2"></div>
+				<div class="childr cheera" id="48"></div>
+				<div class="childr cheera" id="1"></div>
+				<div class="childr" id="rh1"></div>
+				<div class="child" id="49"></div>
+				<div class="child" id="52"></div>
+				<div class="child" id="51"></div>
+				<div class="child" id="50"></div>
+			</div>
+			<div class="blue">
+				<div class="Home">
+					<div id="blue1">
+						<button onClick="playerClick(this.id)" disabled class="bluePiece" id="b1"><img height="100%" width="100%" src="images/gamePiece/blue.png" alt=""></button>
+					</div> 
+					<div id="blue2">
+						<button onClick="playerClick(this.id)" disabled class="bluePiece" id="b2"><img height="100%" width="100%" src="images/gamePiece/blue.png" alt=""></button>
+					</div>
+					<div id="blue3">
+						<button onClick="playerClick(this.id)" disabled class="bluePiece" id="b3"><img height="100%" width="100%" src="images/gamePiece/blue.png" alt=""></button>
+					</div>
+					<div id="blue4">
+						<button onClick="playerClick(this.id)" disabled class="bluePiece" id="b4"><img height="100%" width="100%" src="images/gamePiece/blue.png" alt=""></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p id="numbers"></p>
+		<p id="playerName">Player <span style="color: RED" id="name">red</span> turn</p>
+		<div class="dice" >
+			<button id="diceSize" onclick="rollDice()">
+					<img id="diceImg" style="padding-top: 5px;" src="images/ludo-dice/1.png">
+			</button>
+		</div>
+	</div>
+</body>
+</html>
